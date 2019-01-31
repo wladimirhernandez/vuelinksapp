@@ -46,7 +46,7 @@
               </tr>
               </thead>
               <tbody>
-              <tr v-for="link in links">
+              <tr v-for="link in links" :key="link.title">
                 <td>
                   <a target="_blank" v-bind:href="link.url">{{ link.title }}</a>
                 </td>
